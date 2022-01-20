@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}View Page{% endblock %}
+{% block content %}
+    {% for item in view_var %}
+
+        <p>|| Name: {{item.tb_name}} ||  Email: {{item.tb_email}} ||</p>
+
+    {% endfor %}
+{% endblock %}
